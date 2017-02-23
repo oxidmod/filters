@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Filters</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
-Filters first commit
+<div id="app">
+    {{ message }}
+</div>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    });
+</script>
 </body>
 </html>
