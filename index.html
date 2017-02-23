@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Filters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 </head>
 <body>
-<div id="app">
-    {{ message }}
-</div>
-<script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue!'
-        }
-    });
-</script>
+    <div class="container">
+        <div id="header" class="row">
+            header
+        </div>
+        <div id="content" class="row">
+            <div class="grid-example col s12"><span class="flow-text">I am always full-width (col s12)</span></div>
+            <div class="grid-example col s12 m6"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
+        </div>
+        <div id="footer" class="row">
+            footer
+        </div>
+    </div>
+    <script src="/app.js"></script>
 </body>
 </html>
